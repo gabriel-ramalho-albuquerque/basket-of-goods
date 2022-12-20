@@ -8,20 +8,21 @@ The project structure was designed with the Model–View–Controller (MVC) soft
 
 Directory source structure:
 
+```
  .
     ├── main
     |	├── java
     |	|	├── com.basketofgoods.basket
-    |	|	|	├── controller                   # Controller classes. Used to manipulate the model classes and apply business logic.
-    |	|	|	├── model                   	 # Model classes. Application's data structure.
-    |	|	|	├── util						 # Util classes. Has constants class, view messages class and custom exceptions.
-    |	|	|	├── view						 # View classes. Used to show the view messages to the user and get the inputs using the controller classes.
-    |	|	├── BasketApplication.java			 # Application runnable class.
+    |	|	|	├── controller # Controller classes. Used to manipulate the model classes and apply business logic.
+    |	|	|	├── model      # Model classes. Application's data structure.
+    |	|	|	├── util       # Util classes. Has constants class, view messages class and custom exceptions.
+    |	|	|	├── view       # View classes. Used to show the view messages to the user and get the inputs using the controller classes.
+    |	|	├── BasketApplication.java   # Application runnable class.
     ├── test
     |	├── java
     |	|	├── com.basketofgoods.basket
-    |	|	|	├── controller                   # Controller Junit test classes using Mockito framework.
-
+    |	|	|	├── controller  # Controller Junit test classes using Mockito framework.
+```
 
 The project uses Maven and has the Spring Boot DevTools, Lombok and JUnit dependencies.
 All the tests has more than 80% code coverage.
