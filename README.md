@@ -25,6 +25,7 @@ Directory source structure:
 ```
 
 The project uses Maven and has the Spring Boot DevTools, Lombok and JUnit dependencies.
+The model 'Offer' class can be extended allowing future extensibility by creating new types of offers with new discount algorithms.
 All the tests has more than 80% code coverage.
 
 ## View Messages Examples:
