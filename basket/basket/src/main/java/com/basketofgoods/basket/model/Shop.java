@@ -5,15 +5,14 @@ import lombok.*;
 import java.util.List;
 
 /**
- * Model Class that represents the basket.
+ * Model Class that represents the shop.
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class Basket {
-    private List<Product> productList;
+public class Shop {
+    private Inventory inventory;
     private List<Offer> offerList;
-
 }

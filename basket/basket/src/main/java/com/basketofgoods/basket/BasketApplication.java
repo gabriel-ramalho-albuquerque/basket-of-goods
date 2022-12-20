@@ -1,5 +1,7 @@
 package com.basketofgoods.basket;
 
+import com.basketofgoods.basket.view.BasketView;
+import com.basketofgoods.basket.view.ShopView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -11,13 +13,18 @@ public class BasketApplication implements CommandLineRunner {
 	private static Logger LOG = LoggerFactory
 			.getLogger(BasketApplication.class);
 
+	private ShopView shopView = new ShopView();
+	private BasketView basketView = new BasketView();
+
 	public static void main(String[] args) {
-		LOG.info("STARTING THE APPLICATION");
 		SpringApplication.run(BasketApplication.class, args);
 	}
 
 	@Override
-	public void run(String... args) throws Exception {
-		LOG.info("EXECUTING : command line runner");
+	public void run(String... args) {
+		shopView.show();
+
+		basketView.setShopController(shopView.getShopController());
+		basketView.show();
 	}
 }
